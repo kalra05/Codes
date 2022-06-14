@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int m, j, n=0, flag=0;
+cout << "Enter the Number to check Prime: ";
+cin >> m;
+m=n/2;
+for(j = 2; j <= n; j++)
+{
+if(m % j == 0)
+{
+cout<<"Number is not Prime."<<endl;
+flag=1;
+break;
+}
+}
+if (flag==0)
+cout << "Number is Prime."<<endl;
+return 0;
+}
